@@ -1,0 +1,97 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+  }
+
+  /*Bord in het midden van de pagina plaatsen*/
+  table {
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 1.50rem;
+  }
+  
+  .wrapper {
+    margin: 50px auto 0;
+    width: 450px;
+  }
+  
+  .board button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(68, 68, 68);
+    background: white;
+    cursor: pointer;
+  }
+  .board button:hover {
+    background-color: #e8e8e8
+  }
+  /*Zodat er geen selectie-cirkel komt wanneer je klikt*/
+  .board button:focus {
+    outline: 0;
+  }
+  
+  .board button.rood {
+    background: #d82020;
+  }
+  .board button.geel {
+    background: rgb(238, 223, 11);
+  }
+  
+  .play-again {
+    height: 0px;
+    overflow: hidden;
+  }
+  .play-again.show {
+    height: 40px;
+  }
+  
+  .play-again-btn {
+    display: inline-block;
+    margin-bottom: 2em;
+    height: 40px;
+    line-height: 40px;
+    width: 30%;
+    background: rgb(172, 172, 172);
+    color: white;
+    text-decoration: none;
+  }
+  .play-again-btn:hover,
+  .play-again-btn:focus {
+    background: #797979;
+  }
+  
+  .top-text {
+    margin-bottom: 2rem;
+    font-size: 0.80rem;
+  }
+  
+  .primary {
+    color: black;
+    margin: 0.75rem;
+    font-weight: normal;
+  }
+  .primary .rood,
+  .primary .geel {
+    position: relative;
+  }
+
+  .primary .rood {
+    color: red;
+  }
+
+  .primary .geel {
+    color: rgb(192, 179, 0);
+  }
+
+  .secondary {
+    height: 0px;
+    margin: 0;
+    visibility: hidden;
+  }
+    
+  .center {
+    text-align: center;
+  }
